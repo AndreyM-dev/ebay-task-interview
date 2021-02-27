@@ -1,0 +1,45 @@
+<div class="statistics-container">
+  <div class="search-header">
+    <label class="label" for="name">Account Manager</label>
+    <input
+      id="name"
+      type="text"
+      class="filter"
+      [(ngModel)]="searchValue"
+      placeholder="Enter name"
+      maxlength="20"
+      (keydown.enter)="find()"
+    />
+    <button (click)="find()" class="find-btn">Find</button>
+  </div>
+
+  <hr>
+
+  <div *ngIf="isShowReport" class="report-block">
+    <span class="label report">Report for: {{reportName}}</span>
+
+    <div *ngFor="let summary of conditionSummary | keyvalue" class="statistics-block">
+      <div class="label">Condition: <span class="condition-type">{{summary.key}}</span></div>
+
+      <table>
+        <thead>
+        <tr>
+          <th>Epid</th>
+          <th>contextAsSite</th>
+          <th>contextAsSeller</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of summary.value">
+          <td>{{item.epid}}</td>
+          <td>{{item.contextAsSite}}</td>
+          <td>{{item.contextAsSeller}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</div>
+

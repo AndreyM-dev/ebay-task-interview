@@ -1,0 +1,77 @@
+.statistics-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.statistics-block {
+  margin-top: 20px;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter {
+  width: 400px;
+  border: 0.07em solid #d9d9d9;
+  border-radius: 0px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.find-btn {
+  padding: 10px;
+  width: 180px;
+  background-color: #f8f8f8;
+  border: 0.07em solid #d9d9d9;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.report {
+  text-decoration: underline;
+}
+
+.report-block {
+  margin-top: 30px;
+}
+
+.condition-type {
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 0.07em solid #d9d9d9;
+}
+
+thead {
+  background-color: #f8f8f8;
+}
+
+td {
+  width: 100px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
